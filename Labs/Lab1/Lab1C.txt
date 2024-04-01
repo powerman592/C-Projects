@@ -1,0 +1,22 @@
+// Lab1C
+// Class: CSE 1321L
+// Section: E02
+// Term: Fall
+// Instructor: Maneesha Penmetsa
+// Name: Cameron Frye
+// Lab #:1C
+// Demonstrate the use of the cin, or standard input stream to read numeric data.
+// Calculates fuel efficiency based on values entered by the user.
+#include <iostream>
+using namespace std;
+int main()
+{
+	int miles;
+	double gallons, mpg;
+	cout << "Enter the number of miles: ";
+	cin >> miles;
+	cout << "Enter the gallons of fuel used: ";
+	cin >> gallons;
+	mpg = miles / gallons; //I changed the "*" into a "/" because the formula was wrong.
+	cout << "Miles Per Gallon: " << mpg << endl << endl;
+}
