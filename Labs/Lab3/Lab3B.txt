@@ -1,0 +1,54 @@
+/*
+Class: CSE 1321L
+Section : E02
+Term : Fall
+Instructor : Maneesha Penmetsa
+Name : Cameron Frye
+Lab#  : 3B
+*/
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int course1, course2, course3, course4;
+	int quality1, quality2, quality3, quality4;
+	int totalCourse;
+	int totalQuality;
+	float gpa;
+
+	cout << "Course 1 hours: ";
+	cin >> course1;
+	cout << "Grade for course 1: ";
+	cin >> quality1;
+	quality1 = quality1 * course1;
+
+	cout << "Course 2 hours: ";
+	cin >> course2;
+	cout << "Grade for course 2: ";
+	cin >> quality2;
+	quality2 = quality2 * course2;
+
+	cout << "Course 3 hours: ";
+	cin >> course3;
+	cout << "Grade for course 3: ";
+	cin >> quality3;
+	quality3 = quality3 * course3;
+
+	cout << "Course 4 hours: ";
+	cin >> course4;
+	cout << "Grade for course 4: ";
+	cin >> quality4;
+	quality4 = quality4 * course4;
+
+	totalCourse = course1 + course2 + course3 + course4;
+	totalQuality = quality1 + quality2 + quality3 + quality4;
+
+	gpa = float(totalQuality) / float(totalCourse);
+
+	cout << "Total hours is: " << totalCourse << endl;
+	cout << "Total quality points is: " << totalQuality << endl;
+	cout << "Your GPA for this semester is " << gpa;
+
+	return 0;
+}

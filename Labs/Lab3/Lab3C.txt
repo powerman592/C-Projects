@@ -1,0 +1,47 @@
+/*
+Class: CSE 1321L
+Section : E02
+Term : Fall
+Instructor : Maneesha Penmetsa
+Name : Cameron Frye
+Lab#  : 3C
+*/
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	float numQuarters, numDimes, numNickels, numPennies;
+
+	cout << "Enter the number of quarters: ";
+	cin >> numQuarters;
+	cout << "Enter the number of dimes: ";
+	cin >> numDimes;
+	cout << "Enter the number of nickels: ";
+	cin >> numNickels;
+	cout << "Enter the number of pennies: ";
+	cin >> numPennies;
+
+	cout << endl << "You entered " << int(numQuarters) << " quarters.\n";
+	cout << "You entered " << int(numDimes) << " dimes.\n";
+	cout << "You entered " << int(numNickels) << " nickels.\n";
+	cout << "You entered " << int(numPennies) << " pennies.\n";
+
+	float quaterValue, dimeValue, nickelValue, pennyValue;
+
+	quaterValue = numQuarters * .25;
+	dimeValue = numDimes * .10;
+	nickelValue = numNickels * .05;
+	pennyValue = numPennies * .010;
+	float total = quaterValue + dimeValue + nickelValue + pennyValue; //adds the values of all the change together
+
+	int totalDollar = int(total); //total dollar is the dollar amount by itself
+	
+	float totalCent;
+	totalCent = (total - totalDollar) * 100; // total cent is the total change by itself
+
+	cout << endl << "Your total is " << totalDollar
+		<< " dollars and " << totalCent << " cents.";
+
+	return 0;
+}

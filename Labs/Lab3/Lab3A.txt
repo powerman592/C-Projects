@@ -1,0 +1,34 @@
+/*
+Class: CSE 1321L
+Section : E02
+Term : Fall
+Instructor : Maneesha Penmetsa
+Name : Cameron Frye
+Lab#  : 3A
+*/
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int moneyOwed; //current credit card balance
+	float apr; //annual percentage rate of credit card
+	float mpr; // monthly percentage rate
+	float minPay; //minimum payment for cc
+
+	cout << "Amount Owed: ";
+	cin >> moneyOwed;
+
+	cout << "$APR: ";
+	cin >> apr;
+
+	mpr = (apr / 12);
+	minPay = ((moneyOwed * (apr / 100)) / 12);
+	//apr / 100 changes apr to decimal form
+
+
+	cout << "Monthly percentage rate: " << mpr;
+	cout << endl << "Minimum payment: $" << minPay;
+
+	return 0;
+}
