@@ -1,0 +1,25 @@
+/*
+Class: CSE 1321L
+Section : E02
+Term : Fall
+Instructor : Maneesha Penmetsa
+Name : Cameron Frye
+Lab#  : 2B
+*/
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+	cout << "___*___" << endl;
+	cout << "__*_*__" << endl;
+	cout << "_*_*_*_" << endl;
+	cout << "*_*_*_*" << endl;
+	cout << "_*_*_*_" << endl;
+	cout << "__*_*__" << endl;
+	cout << "___*___" << endl;
+
+	return 0;
+}

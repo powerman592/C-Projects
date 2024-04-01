@@ -1,0 +1,38 @@
+
+/*
+Class: CSE 1321L
+Section : E02
+Term : Fall
+Instructor : Maneesha Penmetsa
+Name : Cameron Frye
+Lab#  : 2A
+*/
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+	string name;
+	string name2;
+	string verb;
+	string adverb;
+
+	cout << "Enter a name: ";
+	cin >> name;
+
+	cout << "Enter another name: ";
+	cin >> name2;
+
+	cout << "Enter a verb: ";
+	cin >> verb;
+
+	cout << "Enter an adverb: ";
+	cin >> adverb;
+
+	cout << "Once upon a time, there was a person named " << name << " who had a child named " << name2 <<". This child would "
+		<< verb << " " << adverb << " while singing to strangers.";
+
+	return 0;
+}
